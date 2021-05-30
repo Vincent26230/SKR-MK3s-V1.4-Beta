@@ -44,5 +44,18 @@ Remeber that I have images of each step for clarification.
 
 Next head over to the ESP Firmware Update txt file and read the direction to update the firmware of the module.
 
+Encore plus simple!
+Dans config.h 
 
+#define SERIAL_PORT -1
+
+#define SERIAL_PORT_2 0
+
+#define SERIAL_PORT_3 3
+
+#ifndef LPC_PINCFG_UART3_P4_28
+  #define LPC_PINCFG_UART3_P4_28
+#endif
+
+(fonctionne avec Marlin 2.0.8.1 sur skr1.4 turbo + esp01S)
 
